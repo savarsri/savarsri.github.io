@@ -1,0 +1,111 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  height: 100vh;
+  background-image: url("../../assets//bg5.jpg");
+  background-size: cover;
+  scroll-snap-align: center;
+}
+
+.content {
+  /* margin-top: 10vh; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 70%;
+  width: 70%;
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  /* background-color: rgba(17, 25, 40, 0.75); */
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 40px 5px rgba(0, 157, 255, 0.25);
+}
+
+.aboutDiv {
+  width: 60%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutText {
+  text-align: center;
+  font-size: 32px;
+}
+
+.textDiv {
+  font-size: 16px;
+}
+
+.pic {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic > img {
+  height: 80%;
+  width: 80%;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  height: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hr {
+  border: 1px solid;
+  width: 20%;
+}
+
+.socialTag {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.threeModel {
+  width: 40%;
+  height: 80%;
+  border-radius: 20px;
+  margin-right: 25px;
+}
+
+.model {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.spinMe {
+  font-size: 14px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  rotate: -10deg;
+}
