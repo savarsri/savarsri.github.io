@@ -41,16 +41,6 @@ function About() {
             <div className={styles.spinMe}>
               Spin Me <RotateRightIcon />
             </div>
-            <Canvas
-              className={styles.model}
-              camera={{ fov: 15, position: [-10, 10, 25] }}
-            >
-              <Suspense fallback={null}>
-                <Model />
-                <OrbitControls enableZoom={false} rotateSpeed={0.5} />
-                <Environment preset="apartment" />
-              </Suspense>
-            </Canvas>
           </div>
           <div className={styles.aboutDiv}>
             <div className={styles.aboutText}>About Me</div>
