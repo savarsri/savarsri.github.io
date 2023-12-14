@@ -8,7 +8,7 @@ import LinearProgress, {
 
 const Section = styled.div`
   height: 100vh;
-  background-image: url("/src/assets/bg3.jpg");
+  background-image: url("/images/bg3.jpg");
   background-size: cover;
   scroll-snap-align: center;
 

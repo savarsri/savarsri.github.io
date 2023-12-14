@@ -9,7 +9,7 @@ import styled from "styled-components";
 
 const Section = styled.div`
   height: 100vh;
-  background-image: url("/src/assets/bg4.jpg");
+  background-image: url("/images/bg4.jpg");
   background-size: cover;
   scroll-snap-align: center;
 

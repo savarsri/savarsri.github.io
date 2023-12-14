@@ -14,7 +14,7 @@ import styled from "styled-components";
 
 const Section = styled.div`
   height: 100vh;
-  background-image: url("/src/assets/bg5.jpg");
+  background-image: url("/images/bg5.jpg");
   background-size: cover;
   scroll-snap-align: center;
 
@@ -24,7 +24,7 @@ const Section = styled.div`
 `;
 
 const Model = () => {
-  const gltf = useLoader(GLTFLoader, "/src/assets/scene.gltf");
+  const gltf = useLoader(GLTFLoader, "/scene.gltf");
   return (
     <>
       <primitive object={gltf.scene} scale={0.0413} />
@@ -41,6 +41,16 @@ function About() {
             <div className={styles.spinMe}>
               Spin Me <RotateRightIcon />
             </div>
+            <Canvas
+              className={styles.model}
+              camera={{ fov: 15, position: [-10, 10, 25] }}
+            >
+              <Suspense fallback={null}>
+                <Model />
+                <OrbitControls enableZoom={false} rotateSpeed={0.5} />
+                <Environment preset="apartment" />
+              </Suspense>
+            </Canvas>
           </div>
           <div className={styles.aboutDiv}>
             <div className={styles.aboutText}>About Me</div>
@@ -96,7 +106,7 @@ function About() {
               </a>
             </div>
             <hr className={styles.hr} />
-            <a href="/src/assets/Savar's Resume.pdf" download>
+            <a href="/Savar's Resume.pdf" download>
               <Button variant="outlined" endIcon={<PictureAsPdfIcon />}>
                 Resume
               </Button>

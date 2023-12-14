@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const Section = styled.div`
   height: 100vh;
-  background-image: url("/src/assets/bg2.jpg");
+  background-image: url("/images/bg2.jpg");
   background-size: cover;
   scroll-snap-align: center;
 
@@ -53,7 +53,7 @@ function Home() {
             </div>
           </div>
           <div className={styles.pic}>
-            <img src="/src/assets/blob.png" alt="" />
+            <img src="/images/blob.png" alt="" />
           </div>
         </div>
       </div>
