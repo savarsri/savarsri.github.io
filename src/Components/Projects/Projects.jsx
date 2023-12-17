@@ -14,7 +14,7 @@ const Section = styled.div`
   scroll-snap-align: center;
 
   @media only screen and (max-width: 768px) {
-    height: 200vh;
+    height: 190vh;
   }
 `;
 

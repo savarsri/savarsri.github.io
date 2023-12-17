@@ -11,10 +11,6 @@ const Section = styled.div`
   background-image: url("/images/bg3.jpg");
   background-size: cover;
   scroll-snap-align: center;
-
-  @media only screen and (max-width: 768px) {
-    height: 200vh;
-  }
 `;
 
 const BorderLinearProgress = st(LinearProgress)(({ theme }) => ({
@@ -68,12 +64,23 @@ function Skills() {
                 percent={75}
               />
             </div>
+            <div className={styles.skillSectionMobile}>
+              <SkillElement text="C/C++" percent={80} />
+              <SkillElement text="Java" percent={90} />
+              <SkillElement text="Backend Development/APIs" percent={90} />
+              <SkillElement text="Databases- MySQL, MongoDB" percent={85} />
+              <SkillElement
+                text="Mobile Application Development"
+                percent={75}
+              />
+              <SkillElement text="Full Stack Development" percent={85} />
+            </div>
           </div>
           <hr className={styles.hr} />
           <div className={styles.textDiv2}>
             Some other technologies I work with
           </div>
-          <div>
+          <div className={styles.otherTech}>
             <Button
               variant="contained"
               sx={{

@@ -54,6 +54,10 @@
   width: 40%;
 }
 
+.skillSectionMobile{
+  display: none;
+}
+
 .skill {
   margin: 10px 0px;
   display: flex;
@@ -75,4 +79,40 @@
 .hr {
   border: 1px solid;
   width: 12%;
+}
+
+@media only screen and (max-width: 480px) {
+  .main {
+    height: 100%;
+  }
+
+  .content {
+    height: 100%;
+  }
+
+  .card {
+    height: 80%;
+    width: 70%;
+    padding: 20px 20px;
+  }
+
+  .skillsContent{
+    flex-direction: column;
+  }
+
+  .skillSection{
+    display: none;
+  }
+
+  .skillSectionMobile{
+    display: block;
+  }
+  .textDiv2{
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* .otherTech>Button{
+    height: 15%;
+  } */
 }

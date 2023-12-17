@@ -109,3 +109,32 @@ a {
   align-items: center;
   rotate: -10deg;
 }
+
+@media only screen and (max-width: 480px) {
+  .main {
+    height: 100%;
+  }
+
+  .content {
+    height: 100%;
+  }
+
+  .card {
+    height: 80%;
+    width: 70%;
+    padding: 20px 20px;
+  }
+
+  .aboutDiv{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .socials{
+    width: 80%;
+  }
+
+  .threeModel{
+    display: none;
+  }
+}

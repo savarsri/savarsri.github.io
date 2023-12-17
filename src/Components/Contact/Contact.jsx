@@ -10,10 +10,6 @@ const Section = styled.div`
   background-image: url("/images/bg1.jpg");
   background-size: cover;
   scroll-snap-align: center;
-
-  @media only screen and (max-width: 768px) {
-    height: 200vh;
-  }
 `;
 
 function Contact() {
